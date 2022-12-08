@@ -1,6 +1,11 @@
 import React from 'react';
 // import styles from './Features.module.scss';
 import styles from '../../index.css';
+import feature1 from '../../assets/1.png';
+import feature2 from '../../assets/2.png';
+import feature3 from '../../assets/3.png';
+import feature4 from '../../assets/4.png';
+import laptop from '../../assets/5.png';
 
 const Features = () => {
   return (
@@ -16,6 +21,7 @@ const Features = () => {
 
       <div>
         <section>
+          <img src={feature1} alt="feature1" />
           <h2>Share team inboxes</h2>
           <p>
             Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same
@@ -23,6 +29,7 @@ const Features = () => {
           </p>
         </section>
         <section>
+          <img src={feature2} alt="feature2" />
           <h2>Deliver instant answers</h2>
           <p>
             An all-in-one customer service platform that helps you balance everything your customers
@@ -30,6 +37,7 @@ const Features = () => {
           </p>
         </section>
         <section>
+          <img src={feature3} alt="feature3" />
           <h2>Manage your team with reports</h2>
           <p>
             Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and
@@ -37,12 +45,14 @@ const Features = () => {
           </p>
         </section>
         <section>
+          <img src={feature4} alt="feature4" />
           <h2>Connect with customers</h2>
           <p>
             Solve a problem or close a sale in real-time with chat. If no one is available,
             customers are seamlessly routed to email without confusion.
           </p>
         </section>
+        <img src={laptop} alt="laptop" />
       </div>
     </div>
   );
