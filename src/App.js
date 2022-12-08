@@ -1,7 +1,8 @@
 import './App.css';
+import Features from './components/Features';
 
 function App() {
-  return <div className="App">lol</div>;
+  return <Features />;
 }
 
 export default App;

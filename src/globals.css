@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply: font-inter antialiased;
+  -webkit-font-variant-ligatures: contextual;
+  font-variant-ligatures: contextual;
+  -webkit-font-kerning: normal;
+  font-kerning: normal;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .tt-xs {
+    @apply text-xs leading-xs;
+  }
+  .tt-sm {
+    @apply text-sm leading-sm;
+  }
+  .tt-md {
+    @apply text-md leading-md;
+  }
+  .tt-lg {
+    @apply text-lg leading-lg;
+  }
+  .tt-xl {
+    @apply text-xl leading-xl;
+  }
+  .td-xs {
+    @apply text-display-xs leading-display-sm;
+  }
+  .td-sm {
+    @apply text-display-sm leading-display-sm;
+  }
+  .td-md {
+    @apply text-display-md leading-display-md tracking-display-lg;
+  }
+  .td-lg {
+    @apply text-display-lg leading-display-lg tracking-display-lg;
+  }
+  .td-xl {
+    @apply text-display-xl leading-display-xl tracking-display-lg;
+  }
+
+  .tt-xs-md {
+    @apply text-xs font-medium leading-xs;
+  }
+  .tt-sm-md {
+    @apply text-sm font-medium leading-sm;
+  }
+  .tt-md-md {
+    @apply text-md font-medium leading-md;
+  }
+  .tt-lg-md {
+    @apply text-lg font-medium leading-lg;
+  }
+  .tt-xl-md {
+    @apply text-xl font-medium leading-xl;
+  }
+  .td-xs-md {
+    @apply text-display-xs font-medium leading-display-xs;
+  }
+  .td-sm-md {
+    @apply text-display-sm font-medium leading-display-sm;
+  }
+  .td-md-md {
+    @apply text-display-md font-medium leading-display-md tracking-display-lg;
+  }
+  .td-lg-md {
+    @apply text-display-lg font-medium leading-display-lg tracking-display-lg;
+  }
+  .td-xl-md {
+    @apply text-display-xl font-medium leading-display-xl tracking-display-lg;
+  }
+
+  .tt-xs-semi {
+    @apply text-xs font-semibold leading-xs;
+  }
+  .tt-sm-semi {
+    @apply text-sm font-semibold leading-sm;
+  }
+  .tt-md-semi {
+    @apply text-md font-semibold leading-md;
+  }
+  .tt-lg-semi {
+    @apply text-lg font-semibold leading-lg;
+  }
+  .tt-xl-semi {
+    @apply text-xl font-semibold leading-xl;
+  }
+  .td-xs-semi {
+    @apply text-display-xs font-semibold leading-display-xs;
+  }
+  .td-sm-semi {
+    @apply text-display-sm font-semibold leading-display-sm;
+  }
+  .td-md-semi {
+    @apply text-display-md font-semibold leading-display-md tracking-display-lg;
+  }
+  .td-lg-semi {
+    @apply text-display-lg font-semibold leading-display-lg tracking-display-lg;
+  }
+  .td-xl-semi {
+    @apply text-display-xl font-semibold leading-display-xl tracking-display-lg;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex items-center justify-center whitespace-nowrap rounded-lg font-semibold transition duration-200 ease-in-out focus:outline-none;
+  }
+  /* vertical paddings have been reduce by 1px to compensate for the "inner" border problem */
+  .btn-sm {
+    @apply gap-2 px-[13px] py-[7px] text-sm leading-sm;
+  }
+
+  .btn-md {
+    @apply gap-2 px-[15px] py-[9px] text-sm leading-sm;
+  }
+
+  .btn-lg {
+    @apply gap-2 px-[17px] py-[9px] text-md leading-md;
+  }
+
+  .btn-xl {
+    @apply gap-2 px-[19px] py-[11px] text-md leading-md;
+  }
+
+  .btn-2xl {
+    @apply gap-3 px-[27px] py-[15px] text-lg leading-lg;
+  }
+
+  .btn-primary {
+    @apply border border-primary-600 bg-primary-600 text-white shadow-xs hover:border-primary-700 hover:bg-primary-700 focus:shadow-xs-ring-primary disabled:border-primary-200 disabled:bg-primary-200;
+  }
+
+  .btn-primary-destructive {
+    @apply border border-error-600 bg-error-600 text-white shadow-xs hover:border-error-700 hover:bg-error-700 focus:shadow-xs-ring-error disabled:border-error-200 disabled:bg-error-200;
+  }
+
+  .btn-secondary {
+    @apply border border-primary-50 bg-primary-50 text-primary-700 shadow-xs hover:border-primary-100 hover:bg-primary-100 focus:shadow-xs-ring-primary disabled:border-primary-25 disabled:bg-primary-25 disabled:text-primary-300;
+  }
+
+  .btn-secondary-destructive {
+    @apply border border-error-50 bg-error-50 text-error-700 shadow-xs hover:border-error-100 hover:bg-error-100 focus:shadow-xs-ring-error disabled:border-error-25 disabled:bg-error-25 disabled:text-error-300;
+  }
+
+  .btn-secondary-gray {
+    @apply border border-gray-300 bg-white text-gray-700 shadow-xs hover:bg-gray-50 hover:text-gray-800 focus:shadow-xs-ring-gray disabled:border-gray-200 disabled:bg-white disabled:text-gray-300;
+  }
+
+  .btn-secondary-gray-destructive {
+    @apply border border-error-300 bg-white text-error-700 shadow-xs hover:bg-error-50 hover:text-error-800 focus:shadow-xs-ring-error disabled:border-error-200 disabled:bg-white disabled:text-error-300;
+  }
+
+  .btn-tertiary {
+    @apply border border-transparent text-primary-700 hover:bg-primary-50 disabled:bg-transparent disabled:text-gray-300;
+  }
+
+  .btn-tertiary-destructive {
+    @apply border border-transparent text-error-700 hover:bg-error-50 disabled:bg-transparent disabled:text-error-300;
+  }
+
+  .btn-tertiary-gray {
+    @apply border border-transparent text-gray-500 hover:bg-gray-50 hover:text-gray-600 focus:bg-gray-50 focus:shadow-xs-ring-gray disabled:bg-transparent disabled:text-gray-300;
+  }
+
+  .btn-tertiary-gray-destructive {
+    @apply border border-transparent text-error-700 hover:bg-error-50 hover:text-error-800 disabled:bg-transparent disabled:text-error-300;
+  }
+
+  .link {
+    @apply inline-flex items-center transition duration-200 ease-in-out;
+  }
+
+  .link-sm {
+    @apply gap-2 text-sm font-semibold leading-sm;
+  }
+
+  .link-md {
+    @apply gap-2 text-sm font-semibold leading-sm;
+  }
+
+  .link-lg {
+    @apply gap-2 text-md font-semibold leading-md;
+  }
+
+  .link-xl {
+    @apply gap-2 text-md font-semibold leading-md;
+  }
+
+  .link-2xl {
+    @apply gap-3 text-lg font-semibold leading-lg;
+  }
+
+  .link-gray {
+    @apply text-gray-500 hover:text-gray-700 disabled:text-gray-300;
+  }
+
+  .link-primary {
+    @apply text-primary-700 hover:text-primary-800 disabled:text-gray-300;
+  }
+
+  .link-destructive {
+    @apply text-error-700 hover:text-error-800 disabled:text-error-300;
+  }
+}
