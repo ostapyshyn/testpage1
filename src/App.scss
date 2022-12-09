@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   width: 100%;
-  max-width: 500px;
-  border: 1px solid mediumblue;
   margin: auto;
+  @media screen and (max-width: 1200px) {
+    height: auto;
+    padding-inline: 16px;
+    padding-block: 64px;
+  }
 }

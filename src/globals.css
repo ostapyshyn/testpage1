@@ -4,7 +4,7 @@
 
 html,
 body {
-  @apply: font-inter antialiased;
+  @layer font-inter antialiased;
   -webkit-font-variant-ligatures: contextual;
   font-variant-ligatures: contextual;
   -webkit-font-kerning: normal;
